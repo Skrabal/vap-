@@ -1,0 +1,23 @@
+Random rd = new Random();
+int max = -1;
+int min = 10;
+for (int i = 0; i < 5; i++)
+{
+    for (int z = 0; z < 5; z++)
+    {
+        int rand_num = rd.Next(0, 9);
+        Console.Write(rand_num);
+        Console.Write(" ");
+        if (rand_num < min)
+        {
+            min = rand_num;
+        }
+        if (rand_num > max)
+        {
+            max = rand_num;
+        }
+    }
+    Console.WriteLine();
+}
+Console.WriteLine("nejměnší hodnota matice je " + min);
+Console.WriteLine("největší hodnota matice je " + max);
